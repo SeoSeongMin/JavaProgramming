@@ -1,0 +1,28 @@
+```
+public class enum_sinhodong_17 {
+	enum sinhodong{
+		RED(30,"RedLight"), AMBER(5, "AmberLight"), GREEN(50,"GreenLight");
+		
+		int time;
+		String look;
+		
+		sinhodong(int time, String look){
+			this.time = time;
+			this.look = look;
+		}
+		
+		int time_get() {
+			return time;
+		}
+		String look_get() {
+			return look;
+		}
+	}
+
+	public static void main(String[] args) {
+		for(sinhodong sinho : sinhodong.values()) {
+			System.out.printf("%s = %d \n",sinho.look_get(), sinho.time_get());
+		}
+	}
+}
+```
